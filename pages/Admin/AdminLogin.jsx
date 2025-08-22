@@ -38,12 +38,7 @@ function AdminLogin() {
           >
             Base Commander
           </Link>
-          <Link
-            to="/login/logisticlogin"
-            className="hover:text-[#008000] transition"
-          >
-            Logistics Officer
-          </Link>
+          
         </div>
 
         <form

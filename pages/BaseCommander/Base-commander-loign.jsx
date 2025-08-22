@@ -35,9 +35,7 @@ function BaseCommanderLogin() {
         <h1 className="bg-[#008000] text-white px-4 py-2 rounded-lg shadow">
           Base Commander
         </h1>
-        <Link
-          to="/login/logisticlogin"
-          className="hover:text-[#008000] transition px-4 py-2 rounded-lg">Logistics Officer</Link>
+        
       </div>
       <form
         onSubmit={handleSubmit}

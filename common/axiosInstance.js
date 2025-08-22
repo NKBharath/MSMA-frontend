@@ -3,7 +3,7 @@ import axios from "axios";
 const API = axios.create({
     baseURL: import.meta.env.MODE === "development"
         ? "http://localhost:3000/api"
-        : "https://msma-backend.onrender.com/api",
+        : "https://msma-backend-2-2.onrender.com/api",
 });
 
 API.interceptors.request.use((req)=>{

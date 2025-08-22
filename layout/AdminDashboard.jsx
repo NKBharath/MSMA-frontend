@@ -67,6 +67,18 @@ function AdminDashboardLayout() {
           >
             Transfers
           </NavLink>
+        <NavLink
+            to="/admindashboard/APIlogs"
+            className={({ isActive }) =>
+              `p-3 ${
+                isActive
+                  ? "bg-[rgb(39,44,53)] text-white"
+                  : "text-white hover:bg-[rgb(39,44,53)]"
+              }`
+            }
+          >
+            View Logs
+          </NavLink>
         </div>
       </div>
       <div className="pt-24 md:pl-64 p-5">

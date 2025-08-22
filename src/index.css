@@ -1,9 +1,10 @@
 @import "tailwindcss";
-
-option{
-    @apply truncate;
-}
-
 body{
     background-color: #0F1319;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+  cursor: pointer;
+}
+
+

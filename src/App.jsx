@@ -17,6 +17,7 @@ import {Toaster} from "react-hot-toast";
 import { useEffect } from "react";
 import { loadUserFromStorage } from "../controller/loginController";
 import LandingPage from "./landing";
+import ApiLogs from "../pages/Admin/APIlogs";
 function App() {
   const dispatch = useDispatch();
   const {user, isAuthenticated,rehydrated} = useSelector((state) => state.auth);
@@ -44,6 +45,8 @@ function App() {
             <Route path="home" element={<AdminDashboard />} />
             <Route path="purchases" element={<AdminPurchases />} />
             <Route path="transfers" element={<AdminTransfers />} />
+            <Route path="APIlogs" element={<ApiLogs/>}/>
+
       </Route>
       <Route path="/basecommanderdashboard" element={
           <CheckAuth isAuthenticated={isAuthenticated} user={user}>

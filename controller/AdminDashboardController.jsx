@@ -37,3 +37,12 @@ export const addAdminAsset = async (assetData) => {
     console.error("Error adding admin asset:", error);
   }
 };
+
+export const getLogs = async () => {
+  try{
+    const {data} = await API.get("/admin/logs");
+    return data;
+  }catch(error){
+    console.error("Error fetching logs: controller", error);
+  }
+}

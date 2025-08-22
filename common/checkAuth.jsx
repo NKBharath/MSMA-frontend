@@ -19,6 +19,9 @@ const CheckAuth = ({isAuthenticated, user, children}) => {
     if(isAuthenticated && user.role === "admin" && location.pathname.includes("/basecommanderdashboard")){
         return <Navigate to="/admindashboard/home" />;
     }
+    if(isAuthenticated && user.role === "base commander" && location.pathname.includes("/admindashboard")){
+        return <Navigate to="/basecommanderdashboard/home" />;
+    }
     return children;
 }
 export default CheckAuth;

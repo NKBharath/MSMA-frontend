@@ -62,7 +62,7 @@ function App() {
         toastOptions={{
           success: {
             style: {
-              background: "#00A36C", // ✅ your previous color scheme
+              background: "#00A36C", 
               color: "white",
             },
           },
